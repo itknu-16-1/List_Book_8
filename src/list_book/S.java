@@ -25,7 +25,6 @@ public class S extends HttpServlet {
 		books.add(new Book("name2", 13.0, "asdf"));
 		books.add(new Book("name3", 14.0, "asdf"));
 		
-		
 		// add list to args and redirect to JSP
 		request.setAttribute("books", books);
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/t.jsp");
